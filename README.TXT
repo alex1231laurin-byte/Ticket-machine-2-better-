@@ -20,3 +20,5 @@ objects.
 51: The insertMoney call now only increases the balance if possible, the total only increases from the price each time we use the printTicket call
 and the balance now doesn't get reduced to 0 after printing a ticket, but instead decreases by the price count.
 52: Yes, but it no longer tells you how many more cents you need to print a new ticket.
+53: No, because the If statement checks if the balance is greater or equal to the price.
+54: the multiplication (*), the division (/) and the modulus (%)

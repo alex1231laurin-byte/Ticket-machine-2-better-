@@ -17,6 +17,8 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    private int discount;
+    private int saving;
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -85,6 +87,17 @@ public class TicketMachine
         }
     }
 
+    public void insertDiscount(int discountamount)
+    {
+            discount = discountamount;
+    }
+    
+    public void getSaving()
+    {
+        saving = price * discount;
+        System.out.println("You saved: " + saving);
+    }
+    
     /**
      * Return the money in the balance.
      * The balance is cleared.
