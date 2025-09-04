@@ -13,3 +13,10 @@ It is discussed in chapter 2.
 Purpose of project: To illustrate conditional statements.
 How to start this project: Create one or more TicketMachine objects.
 
+47: No, it does not change when an error message is printed. Inserting 0 should give the same effect as inserting a negative number.
+48: It simply allows 0 to be used.
+50: That feature allows 2D objects to appear on a board for anything Java related. Without it, we would'nt be able to create interactible
+objects.
+51: The insertMoney call now only increases the balance if possible, the total only increases from the price each time we use the printTicket call
+and the balance now doesn't get reduced to 0 after printing a ticket, but instead decreases by the price count.
+52: Yes, but it no longer tells you how many more cents you need to print a new ticket.
