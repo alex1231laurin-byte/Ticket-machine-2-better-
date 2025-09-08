@@ -61,6 +61,15 @@ public class TicketMachine
             balance = balance + amount;
         }
     }
+    
+    public void affordabke(int budget){
+        if(budget >= price) {
+            System.out.print("Just right");
+        }
+        else{
+            System.out.printf("you need %d more cents %n", price - balance);
+        }
+    }
 
     /**
      * Print a ticket if enough money has been inserted, and
