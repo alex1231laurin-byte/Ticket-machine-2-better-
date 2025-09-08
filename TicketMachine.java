@@ -21,7 +21,6 @@ public class TicketMachine
     private int saving;
     private int count;
     private int mean;
-
     /**
      * Create a machine that issues tickets of the given price.
      */
@@ -62,9 +61,9 @@ public class TicketMachine
         }
     }
     
-    public void affordabke(int budget){
+    public void affordable(int budget){
         if(budget >= price) {
-            System.out.print("Just right");
+            System.out.println("Just right");
         }
         else{
             System.out.printf("you need %d more cents %n", price - balance);
@@ -93,8 +92,10 @@ public class TicketMachine
             balance = balance - price;
         }
         else {
+            int amountLeftToPay;
+            amountLeftToPay = price - balance;
             System.out.printf("You must insert at least %d more cents.%n",
-                              price - balance);
+                              amountLeftToPay);
         }
     }
 
@@ -131,5 +132,10 @@ public class TicketMachine
         amountToRefund = balance;
         balance = 0;
         return amountToRefund;
+    }
+    public void emptyMachine()
+    {
+        System.out.println("You refunded: " + total);
+        total = 0;
     }
 }
