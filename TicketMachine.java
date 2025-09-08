@@ -19,6 +19,8 @@ public class TicketMachine
     private int total;
     private int discount;
     private int saving;
+    private int count;
+    private int mean;
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -91,11 +93,23 @@ public class TicketMachine
     {
             discount = discountamount;
     }
+    public void separateamount(int countamount)
+    {
+            count = countamount;
+    }
+    
+    public void separatetotal()
+    {
+        mean = total / count;
+        System.out.println("You saved: " + saving);
+        mean = 0;
+    }
     
     public void getSaving()
     {
         saving = price * discount;
         System.out.println("You saved: " + saving);
+        saving = 0;
     }
     
     /**
