@@ -23,3 +23,5 @@ and the balance now doesn't get reduced to 0 after printing a ticket, but instea
 53: No, because the If statement checks if the balance is greater or equal to the price.
 54: The multiplication (*), the division (/) and the modulus (%)
 58: The println version was easier to understand.
+59: It reduces the balance to 0 before the return statement.
+60: The statement does not work because it is placed after the return statement.
